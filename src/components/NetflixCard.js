@@ -38,7 +38,6 @@ function NetflixCard({
   const toggleCommits = () => {
     setShowCommits(!showCommits);
   };
-  console.log(commits);
 
   return (
     <>
