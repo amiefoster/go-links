@@ -9,7 +9,7 @@ import "../App.css";
 
 function App() {
   const [netflixRepos, setNetflixRepos] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("netflix");
+  const [searchTerm, setSearchTerm] = useState("Netflix");
   const [reload, setReload] = useState(false);
 
   //fetching repos based on search term sent from the search component
@@ -48,7 +48,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header searchTerm={searchTerm}/>
       <Container>
         <Row className="justify-content-md-center">
           <Col xs={5}>
