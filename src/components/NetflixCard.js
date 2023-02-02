@@ -4,6 +4,9 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import DownTeal from "../images/down-teal.png";
 
+//The NetflixCard component takes all the props sent down from NetflixContainer and displays them in cards created using Bootstrap card components
+  //This component also iterates over the commits array to send down props to the NetflixCardCommits component
+
 function NetflixCard({
   fork,
   id,
@@ -19,14 +22,16 @@ function NetflixCard({
   const [showCommits, setShowCommits] = useState(false);
   const [commits, setCommits] = useState([]);
 
+  //fetching commits for each repository based on searchTerm, and name
   useEffect(() => {
-    fetch(`https://api.github.com/repos/${searchTerm}/${name}/commits`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `token ${process.env.REACT_APP_MY_TOKEN}`,
-      },
-    })
+    fetch(`https://api.github.com/repos/${searchTerm}/${name}/commits`)
+    // , {
+    //   method: "GET",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     Authorization: `token ${process.env.REACT_APP_MY_TOKEN}`,
+    //   },
+    // })
       .then((response) => {
         if (response.ok) {
           return response.json();
@@ -35,6 +40,7 @@ function NetflixCard({
       .then((data) => setCommits(data));
   }, []);
 
+  //function to toggle showing the commits on each card
   const toggleCommits = () => {
     setShowCommits(!showCommits);
   };

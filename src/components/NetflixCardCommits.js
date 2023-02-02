@@ -1,6 +1,8 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 
+//The NetflixCardCommits component takes all the props sent down from NetflixCard and displays them in cards created using Bootstrap card components
+
 function NetflixCardCommits({ username, hash, date, message }) {
   return (
     <>

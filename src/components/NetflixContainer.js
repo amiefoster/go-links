@@ -1,5 +1,7 @@
 import NetflixCard from "./NetflixCard";
 
+//The NetflixContainer iterates over the repos array and sends necessary information down to NetflixCard via props
+
 function NetflixContainer({ repos, searchTerm }) {
 
   return (

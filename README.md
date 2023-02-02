@@ -8,6 +8,7 @@
 This project fetches data from the Github API and displays it to users 
 - User can scroll through Netflix's repository information 
 - User can click on each reposity to see the commit information
+- NOTE: I have included comments for each component and most functions to help explain my thought process and decisions
 
 ## Minimum Requirements
 - [x] Creates a list of scrollable cards from Netflix's repositories
@@ -26,6 +27,14 @@ This project fetches data from the Github API and displays it to users
 - Bootstrapp
 - CSS
 - Vercel
+
+# What next?
+
+Given more time, I would:
+- Add more test cases
+- Add error handling
+- Add functionality it so a user could only choose from specific organizaitons and/or add error handling so if the user types in an organization that doesnt exist in the api it would show an error message.
+NOTE: I think a dropdown menu would be better for this than a search box. That was the user can see a list of all orgs that will work and choose from that.
 
 # Getting started
 
@@ -53,6 +62,3 @@ To open the test suite you can run
 ### `npm test`
 This will launch the test runner in the interactive watch mode.
 
-# What next?
-
-Given more time, I would add more test cases, and some error handling.
