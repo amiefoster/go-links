@@ -17,7 +17,7 @@ function App() {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        //Authorization: `token ${process.env.REACT_APP_MY_TOKEN}`,
+        Authorization: `token ${process.env.REACT_APP_MY_TOKEN}`,
       },
     })
       .then((response) => {
