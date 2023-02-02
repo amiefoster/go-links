@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap");
 
 * {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
@@ -60,6 +60,18 @@
     justify-content: center;
   }
 
+  .commits-container{
+    margin-bottom: 20px;
+  }
+
   .netflix-card{
     margin: 10px;
+  }
+
+  .down-img{
+    height: 20px;
+  }
+
+  .commits-button:hover .down-img{
+    content: url(./images/down-white.png);
   }
