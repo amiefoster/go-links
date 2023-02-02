@@ -2,7 +2,7 @@
 
 ## Deployed Version
 
-[Go-Links Take Home](https://go-links-dusky.vercel.app/)
+[Go-Links Take Home](https://go-links-amiefoster.vercel.app/)
 
 ## Project Summary
 This project fetches data from the Github API and displays it to users 
