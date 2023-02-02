@@ -75,3 +75,7 @@
   .commits-button:hover .down-img{
     content: url(./images/down-white.png);
   }
+
+  .commits-button:hover .up-img{
+    content: url(./images/up-white.png);
+  }
