@@ -33,7 +33,7 @@ This project fetches data from the Github API and displays it to users
 Given more time, I would:
 - Add more test cases
 - Add error handling
-- Add functionality it so a user could only choose from specific organizaitons and/or add error handling so if the user types in an organization that doesnt exist in the api it would show an error message.
+- Add functionality so a user could only choose from specific organizaitons and/or add error handling so if the user types in an organization that doesnt exist in the api it would show an error message.
 NOTE: I think a dropdown menu would be better for this than a search box. That was the user can see a list of all orgs that will work and choose from that.
 
 # Getting started
